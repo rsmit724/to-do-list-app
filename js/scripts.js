@@ -20,6 +20,11 @@ function newItem() {
         li.toggleClass('strike');
     });
 
+    //3. Adding the delete button:
+    let crossOutButton = $('<crossOutButton></crossOutButton>');
+    crossOutButton.append(document.createTextNode('X'));
+    li.append(crossOutButton);
+
 
 }
 
